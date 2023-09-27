@@ -22,7 +22,7 @@ let gnome = new monster("Gnome", 100)
 
 samy.attackMonster(gnome)*/
 
-boucleJeu = true
+gameLoop = true
 var attackPokemon = 0
 
 class Pokémon{
@@ -50,12 +50,12 @@ console.log(Ybois)
 console.log(Ralpho) 
 console.log("Ybois à prit", atkReçu, "de dégats, il lui reste ", Ybois.hp, "HP")
 */
-while (boucleJeu == true){
+while (gameLoop == true){
     Ralpho.attackPokemon(Ybois)
     console.log("Ybois à prit", attackPokemon, "de dégats, il lui reste ", Ybois.hp, "HP")
     if (Ybois.hp <= 0){
         console.log(Ybois.name, "a perdu")
-        boucleJeu = false
+        gameLoop = false
         break
     }
     
@@ -64,7 +64,7 @@ while (boucleJeu == true){
     console.log("Ralpho à prit", attackPokemon, "de dégats, il lui reste ", Ralpho.hp, "HP")
     if (Ralpho.hp <= 0){
         console.log(Ralpho.name, "a perdu")
-        boucleJeu = false
+        gameLoop = false
         break
     }
 
