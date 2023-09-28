@@ -1,5 +1,5 @@
-function getRandomNumber(max) {
-    return Math.floor(Math.random()*max);
+function getRandomNumber(inter) {
+    return Math.floor(Math.random()*inter);
 }
 
 var result = ""
