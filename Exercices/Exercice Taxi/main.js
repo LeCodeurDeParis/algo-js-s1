@@ -1,7 +1,7 @@
-var Music = ["Anissa - Wejdene", "Goulag - Kaaris", "Paris c'est loin - Damso feat Booba" , "Tree of life - Billx", "La bohème - Charles Aznavour"]
-var Music = ["Anissa - Wejdene", "Paradis ou Enfer - Kaaris", "Pinnochio - Booba feat Damso" , "La couleur du son - Le Wanski", "Emmenez-moi - Charles Aznavour"]
+var Music1 = ["Anissa - Wejdene", "Goulag - Kaaris", "Paris c'est loin - Damso feat Booba" , "Tree of life - Billx", "La bohème - Charles Aznavour"]
+var Music2 = ["Anissa - Wejdene", "Paradis ou Enfer - Kaaris", "Pinnochio - Booba feat Damso" , "La couleur du son - Le Wanski", "Emmenez-moi - Charles Aznavour"]
 var redLightsNumbers = 0
-var nbrTaxi = 0
+var nbrTaxi = 1
 var getMusic = 0
 var radio = ""
 
@@ -17,7 +17,7 @@ class character{
             
             while (redLightsNumbers < 30 && this.mentalHealth > 0){
                 redLightsNumbers += 1
-                getMusic = Math.floor(Math.random()*5)
+                getMusic = Math.floor(Math.random()*playlist.length)
                 radio = playlist[getMusic]
                 console.log("La musique jouée est ", radio, "et il reste ", 30 - redLightsNumbers, "feux rouges")
                 if (radio == playlist[0]){
@@ -41,6 +41,6 @@ class character{
     }
 
 let John = new character("John", 10)
-John.ride(Music)
+John.ride(Music1)
 
 
