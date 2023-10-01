@@ -1,0 +1,8 @@
+#ImagePlayer {
+    position: relative;
+    float: left;
+}
+#ImageComputer {
+    position:relative;
+    float: right;
+}
