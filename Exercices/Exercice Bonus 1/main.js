@@ -138,15 +138,3 @@ function deroulement(){
     Concl.innerHTML = fin
 
 }
-
-
-/*id.parentNode.removeChild(imageRes1)
-    id.parentNode.removeChild(imageRes2)
-    id.parentNode.removeChild(imageRes3)
-
-    if (id.hasChildNodes()) {
-        while (id.firstChild) {
-            id.removeChild(id.lastChild);
-        }
-      }
-      */

@@ -16,20 +16,23 @@ class character{
     ride(playlist){
             
             while (redLightsNumbers < 30 && this.mentalHealth > 0){
+
                 redLightsNumbers += 1
                 getMusic = Math.floor(Math.random()*playlist.length)
                 radio = playlist[getMusic]
                 console.log("La musique jouée est ", radio, "et il reste ", 30 - redLightsNumbers, "feux rouges")
+
                 if (radio == playlist[0]){
                     this.mentalHealth -= 1
                     console.log("Il reste", this.mentalHealth, "Santé Mentale")
                     nbrTaxi += 1
-
                 }
+
                 if (this.mentalHealth === 0){
                     console.log("Explosion")
                     break
                 }
+                
                 if (redLightsNumbers === 30){
                     console.log("John est arrivé avec ", nbrTaxi, "changements de Taxi")
                     break
@@ -40,7 +43,7 @@ class character{
         }
     }
 
-let John = new character("John", 10)
-John.ride(Music1)
+let Manu = new character("Manu", 10)
+Manu.ride(Music1)
 
 
